@@ -1,0 +1,134 @@
+ul,
+li,
+nav,
+a {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  font-family: helvetica;
+  font-size: 14px;
+  letter-spacing: 0.1em;
+}
+
+#vertical-menu {
+  margin-top: 20px;
+  display: inline-block;
+  border-radius: 5px;
+  box-sizing: border-box;
+  padding-left: 10px;
+  background: #1a558a;
+  float: left;
+  margin-left: -50px;
+}
+.main-menu {
+  display: inline-block;
+  width: 100%;
+  box-sizing: border-box;
+}
+.main-menu li {
+  position: relative;
+  height: 50px;
+  box-shadow: 0 -3px 0 0 #08324e;
+}
+.main-menu > li > a > i {
+  color: #2699fb;
+  width: 2em;
+  height: 100%;
+  line-height: 50px;
+  text-align: left;
+}
+.main-menu > li:first-child,
+.submenu-1 > li:first-child,
+.submenu-2 > li:first-child,
+.submenu-3 > li:first-child {
+  box-shadow: none;
+}
+.main-menu > li:first-child > a,
+.submenu-1 > li:first-child > a,
+.submenu-2 > li:first-child > a,
+.submenu-3 > li:first-child > a {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.main-menu > li:last-child > a,
+.submenu-1 > li:last-child > a,
+.submenu-2 > li:last-child > a,
+.submenu-3 > li:last-child > a {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.main-menu > li > a,
+.submenu-1 > li > a,
+.submenu-2 > li > a,
+.submenu-3 > li > a {
+  color: #2699fb;
+  background: #0e0d0d;
+  line-height: 50px;
+  display: block;
+  padding: 0 1em;
+}
+
+.submenu-1,
+.submenu-2,
+.submenu-3 {
+  position: absolute;
+  white-space: nowrap;
+  top: -9999px;
+  z-index: 99;
+}
+.contain-submenu > a:first-child::after {
+  content: '\f054';
+  padding-left: 1.6em;
+  font-family: 'FontAwesome';
+  float: right;
+  font-size: 14px;
+}
+
+.contain-submenu > a:hover li {
+  transition: 2s;
+}
+.main-menu > li:hover .submenu-1,
+.submenu-1 > li:hover .submenu-2,
+.submenu-2 > li:hover .submenu-3 {
+  top: 0;
+  left: 100%;
+  transition: top 0.25s;
+}
+
+#listicon {
+  font-size: 14px;
+  color: rgb(255, 255, 255);
+}
+
+.active a {
+  background-color: rgb(228, 244, 255) !important;
+  padding-right: 120px !important;
+  color: black !important;
+  font-size: 15px;
+  pointer-events: none;
+}
+.active i {
+  color: black !important;
+  position: relative;
+  float: left;
+}
+
+.main-menu > li:hover > a {
+  color: #22af70;
+}
+.submenu-1 li:hover > a {
+  color: #22a7f0;
+}
+.submenu-2 li:hover > a {
+  color: #f6db7f;
+}
+.submenu-3 li:hover > a {
+  color: #f2784b;
+}
+
+li {
+  list-style: none;
+}

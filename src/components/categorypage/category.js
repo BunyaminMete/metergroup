@@ -1,0 +1,72 @@
+import CategoryContainer from "../dynamic-container/dynamic-container";
+import Footer from "../footer/footer";
+import SideMenu2 from "../side-dropdown/sidemenu2";
+
+import "./category.scss";
+
+export default function CategoryPages({ category }) {
+  return (
+    <>
+      <div class="siteWrapper">
+        <header>
+          <nav>
+            <ul class="siteNav">
+              <li>
+                <a href="/">Ürünler</a>
+              </li>
+            </ul>
+          </nav>
+
+          <a href="/" class="logo">
+            <img
+              src="https://nispetiyemotors.com/wp-content/themes/nispetiyemotors/imaj/logo-beyaz.svg"
+              alt="logo"
+            ></img>
+          </a>
+
+          <div>
+            <a href="#0" class="buttonWrapper">
+              <button class="button">
+                <div class="text">Log In</div>
+                <svg
+                  width="81px"
+                  height="37px"
+                  viewBox="0 0 81 37"
+                  class="border"
+                >
+                  <polyline
+                    points="80,1 80,36 1,36 1,1 80,1"
+                    class="background"
+                  />
+                  <polyline points="80,1 80,36 1,36 1,1 80,1" class="hl-line" />
+                </svg>
+              </button>
+            </a>
+            <a href="#0" class="buttonWrapper">
+              <button class="button">
+                <div class="text">Sign Up</div>
+                <svg
+                  width="81px"
+                  height="37px"
+                  viewBox="0 0 81 37"
+                  class="border"
+                >
+                  <polyline
+                    points="80,1 80,36 1,36 1,1 80,1"
+                    class="background"
+                  />
+                  <polyline points="80,1 80,36 1,36 1,1 80,1" class="hl-line" />
+                </svg>
+              </button>
+            </a>
+          </div>
+        </header>
+        <main>
+          <SideMenu2 />
+          <CategoryContainer kategori={category} />
+        </main>
+      </div>
+      <Footer />
+    </>
+  );
+}

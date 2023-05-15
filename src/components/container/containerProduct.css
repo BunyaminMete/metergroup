@@ -1,0 +1,33 @@
+.container {
+  margin-left: 125px;
+  margin-top: 20px;
+}
+
+.titleDiv {
+  padding: 6px;
+  background-color: rgba(85, 85, 85, 0.432);
+  border-top: 2px solid rgb(156, 38, 38);
+  margin-top: 20px;
+  width: 925px;
+  margin-left: 18px;
+}
+
+.titleText {
+  padding: 3px;
+  color: rgb(255, 255, 255);
+  width: auto;
+  margin-left: -750px;
+  font-size: 14px;
+  letter-spacing: 0.1em;
+  font-weight: bold;
+}
+
+.titleText2 {
+  padding: 3px;
+  color: black;
+  width: auto;
+  margin-left: -690px;
+  font-size: 14px;
+  letter-spacing: 0.1em;
+  font-weight: bold;
+}

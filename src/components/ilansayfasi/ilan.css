@@ -1,0 +1,130 @@
+.container2 {
+  margin-left: -400px;
+  margin-top: 100px;
+}
+
+.titleDiv2 {
+  padding: 6px;
+  background-color: rgba(58, 94, 172, 0.432);
+  border-top: 2px solid rgb(156, 38, 38);
+  margin-top: 20px;
+  width: 1125px;
+  margin-left: 18px;
+}
+
+.titleText2 {
+  padding: 3px;
+  color: rgb(255, 255, 255);
+  width: auto;
+  font-size: 14px;
+  letter-spacing: 0.1em;
+  font-weight: bold;
+  margin-left: -900px;
+}
+
+.titleText2 {
+  padding: 3px;
+  color: rgb(255, 255, 255);
+  width: auto;
+  font-size: 14px;
+  letter-spacing: 0.1em;
+  font-weight: bold;
+}
+
+.info-section {
+  background-color: rgba(0, 0, 0, 0.212);
+  width: 1142px;
+  height: 400px;
+}
+
+.img-section {
+  background-color: rgba(58, 94, 172, 0.432);
+  width: 345px;
+  height: 454px;
+  display: inline-block;
+  float: left;
+  margin-left: 18px;
+  margin-top: 0px;
+}
+
+.imagex {
+  margin-top: 62px;
+}
+
+#buy-button {
+  border: none;
+  color: rgb(255, 255, 255);
+  background-color: rgba(0, 0, 0);
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  font-weight: bold;
+  letter-spacing: 0.2em;
+  padding-right: 80px;
+  padding-left: 68px;
+}
+
+#buy-button:hover {
+  color: rgb(255, 255, 255);
+  background-color: rgb(48, 72, 136);
+}
+
+.angry-grid {
+  display: grid;
+
+  grid-template-rows: 1fr 3fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
+  gap: 0px;
+  height: 454px;
+  margin-top: 4px;
+}
+
+#item-0 {
+  padding: 12px;
+  font-weight: 900;
+  background-color: rgba(58, 94, 172, 0.432);
+  grid-row-start: 1;
+  grid-column-start: 1;
+
+  grid-row-end: 2;
+  grid-column-end: 6;
+}
+#item-1 {
+  font-size: 16px;
+  padding: 40px;
+  border-top: 1px solid rgb(255, 255, 255);
+  background-color: rgba(58, 94, 172, 0.432);
+  grid-row-start: 2;
+  grid-column-start: 1;
+
+  grid-row-end: 5;
+  grid-column-end: 6;
+}
+#item-2 {
+  border-top: 1px solid rgb(255, 255, 255);
+  background-color: rgba(58, 94, 172, 0.432);
+  grid-row-start: 5;
+  grid-column-start: 1;
+
+  grid-row-end: 6;
+  grid-column-end: 6;
+}
+
+.info-price {
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+}
+
+#pricing {
+  background-color: black;
+  display: inline-block;
+  padding: 12px;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+}

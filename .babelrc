@@ -1,0 +1,24 @@
+{
+  "presets": [
+    "@babel/preset-env",
+    [
+      "@babel/preset-react",
+      {
+        "runtime": "automatic"
+      }
+    ]
+  ],
+  "plugins": [
+    [
+      "i18next-extract",
+      {
+        "discardOldKeys": true,
+        "outputPath": "public/locales/{{locale}}.json"
+      }
+    ],
+    ["@babel/proposal-class-properties", { "loose": true }],
+    ["@babel/proposal-private-methods", { "loose": true }],
+    ["@babel/proposal-private-property-in-object", { "loose": true }],
+    ["@babel/proposal-object-rest-spread", { "loose": true }]
+  ]
+}

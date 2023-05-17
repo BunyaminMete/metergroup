@@ -3,9 +3,9 @@ import { Route, Routes } from "react-router-dom";
 
 import MainPage from "../pages/mainpage";
 import CategoryPages from "../components/categorypage/category";
-import IlanSayfasi from "../components/ilansayfasi/ilanpage";
+import SoloAdvert from "./route2";
 
-function App() {
+function App({ marka }) {
   const categories = [
     "bmw",
     "kia",
@@ -32,17 +32,18 @@ function App() {
     />
   ));
 
+  const soloAdverts = categories.map((marka) => (
+    <SoloAdvert key={marka} marka={marka} />
+  ));
+
   return (
-    <Routes>
-      <>
+    <>
+      <Routes>
         <Route path="/" element={<MainPage />} />
         {routes}
-        <Route
-          path="/bmw-m5-m6-x5-x6-s63-b44-b-50-komple-motor"
-          element={<IlanSayfasi category={"bmw"} />}
-        />
-      </>
-    </Routes>
+      </Routes>
+      {soloAdverts}
+    </>
   );
 }
 

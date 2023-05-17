@@ -1,11 +1,11 @@
 .container2 {
-  margin-left: -400px;
-  margin-top: 100px;
+  margin-left: -100px;
+  margin-top: 50px;
 }
 
 .titleDiv2 {
   padding: 6px;
-  background-color: rgba(58, 94, 172, 0.432);
+  background-color: rgba(0, 0, 0, 0.432);
   border-top: 2px solid rgb(156, 38, 38);
   margin-top: 20px;
   width: 1125px;
@@ -38,12 +38,12 @@
 }
 
 .img-section {
-  background-color: rgba(58, 94, 172, 0.432);
+  background-color: rgb(0, 0, 0);
+  border: 1px solid rgba(255, 0, 0, 0.24);
   width: 345px;
   height: 454px;
-  display: inline-block;
-  float: left;
-  margin-left: 18px;
+  display: block;
+  margin-left: 400px;
   margin-top: 0px;
 }
 
@@ -88,7 +88,7 @@
 #item-0 {
   padding: 12px;
   font-weight: 900;
-  background-color: rgba(58, 94, 172, 0.432);
+  background-color: rgba(0, 0, 0, 0.432);
   grid-row-start: 1;
   grid-column-start: 1;
 
@@ -99,7 +99,7 @@
   font-size: 16px;
   padding: 40px;
   border-top: 1px solid rgb(255, 255, 255);
-  background-color: rgba(58, 94, 172, 0.432);
+  background-color: rgba(0, 0, 0, 0.432);
   grid-row-start: 2;
   grid-column-start: 1;
 
@@ -108,7 +108,7 @@
 }
 #item-2 {
   border-top: 1px solid rgb(255, 255, 255);
-  background-color: rgba(58, 94, 172, 0.432);
+  background-color: rgba(0, 0, 0, 0.432);
   grid-row-start: 5;
   grid-column-start: 1;
 

@@ -11,13 +11,12 @@ export default function App() {
               <div class="aciklamameter">
                 <h6 class="footer-heading text-uppercase text-white">
                   <img
-                    src="https://nispetiyemotors.com/wp-content/themes/nispetiyemotors/imaj/logo-beyaz.svg"
+                    src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgBL1KM707UTPvPH1zUPGKHjSuCkaB5mNkSWsomCE6DTigQaS8t0zngR3Duh4wtJ5LKtYEt78W43fRmJRNs0Si3gnGXNba473GaIo-ehgBtgQZauFMfTIJi2OyH7CPiXz8WUE4TfQnOWdC22qZR6aN0stB9Too34aLMXldEJ2ELvgvek4ZDlJIcdndC/w133-h132/Screenshot_2.png"
                     alt="logo"
                   />
                 </h6>
-                Atenyedekparca.com ' a Hoşgeldiniz Sormak istediğiniz tüm
-                sorularınız için lütfen info@atenyedekparca.com adresine mail
-                atınız veya hemen arayınız.
+                Metergroup.com ' a hoşgeldiniz sormak istediğiniz tüm
+                sorularınız için lütfen arayarak iletişime geçiniz.
               </div>
             </div>
 
@@ -80,7 +79,9 @@ export default function App() {
         </div>
 
         <div class="text-center mt-5">
-          <p class="footer-alt mb-0 f-14">2019 © Anup, All Rights Reserved</p>
+          <p class="footer-alt mb-0 f-14">
+            2022 © METERGROUP, Tüm hakları saklıdır.
+          </p>
         </div>
       </footer>
     </>

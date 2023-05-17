@@ -1,0 +1,63 @@
+#front-side {
+  width: 335px;
+  height: 500px;
+  background: #ffffff;
+  -webkit-transition: all 100ms ease-out;
+  -moz-transition: all 100ms ease-out;
+  -o-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+}
+
+#product-card {
+  width: 300px;
+  height: 400px;
+  margin-left: 10px;
+  margin-top: 15px;
+  overflow: hidden;
+  transform-style: preserve-3d;
+  -webkit-transition: 100ms ease-out;
+  -moz-transition: 100ms ease-out;
+  -o-transition: 100ms ease-out;
+  transition: 100ms ease-out;
+}
+
+.details-container {
+  background: #0a1925;
+  width: 300px;
+  height: 200px;
+  padding: 27px 0px;
+  -webkit-transition: all 200ms ease-out;
+  -moz-transition: all 200ms ease-out;
+  -o-transition: all 200ms ease-out;
+  transition: all 200ms ease-out;
+}
+#product-card.animate .details-container {
+  -webkit-transition: all 200ms ease-out;
+  -moz-transition: all 200ms ease-out;
+  -o-transition: all 200ms ease-out;
+  transition: all 200ms ease-out;
+}
+
+.details-container p {
+  font-size: 15px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  padding: 2px 0 20px 0;
+}
+
+#title {
+  color: rgb(255, 255, 255);
+  font-size: 13px;
+  letter-spacing: 0.1em;
+  font-weight: lighter;
+}
+
+.motoImage {
+  width: 300px;
+  height: 280px;
+  margin-left: -20px;
+}
+
+#container {
+  display: inline-block;
+}

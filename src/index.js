@@ -6,12 +6,31 @@ import "./index.css";
 
 import { BrowserRouter } from "react-router-dom";
 import App from "./routes/route";
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
+
+const categories = [
+  "bmw",
+  "kia",
+  "toyota",
+  "audi",
+  "hyundai",
+  "volkswagen",
+  "jaguar",
+  "landrover",
+  "minicooper",
+  "honda",
+  "ford",
+  "mitsubishi",
+  "mercedes",
+  "seat",
+  "skoda",
+];
 
 root.render(
   <>
     <BrowserRouter>
-      <App />
+      <App marka={"bmw"} />
     </BrowserRouter>
   </>
 );

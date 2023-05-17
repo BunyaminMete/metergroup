@@ -2,9 +2,9 @@ import { Box, Container } from "@mui/material";
 import "./ilan.css";
 import data from "../../data.json";
 
-export default function IlanSingle() {
+export default function IlanSingle({ marka, number }) {
   const formattedValue = new Intl.NumberFormat("tr-TR").format(
-    data["bmw"][1].price * 20.24
+    data[marka][number].price * 20.24
   );
 
   return (
@@ -14,7 +14,8 @@ export default function IlanSingle() {
           fixed={true}
           sx={{
             backgroundColor: "rgba(0, 0, 0, 0.6)",
-            minHeight: "500px",
+            minHeight: "1000px",
+            minWidth: "1200px",
           }}
           maxWidth="md"
         >
@@ -23,7 +24,11 @@ export default function IlanSingle() {
           </div>
           <Box>
             <div className="img-section">
-              <img className="imagex" alt="motor" src={data["bmw"][1].image} />
+              <img
+                className="imagex"
+                alt="motor"
+                src={data[marka][number].image}
+              />
               <button id="buy-button">
                 {"\u00A0"}
                 {"\u00A0"}
@@ -37,7 +42,7 @@ export default function IlanSingle() {
             <div className="info-section">
               <div className="info-description">
                 <div class="angry-grid">
-                  <div id="item-0">{data["bmw"][1].model} </div>
+                  <div id="item-0">{data[marka][number].model} </div>
                   <div id="item-1">
                     Hyundai Accent Komple Motor / Sandık Motor (RB/RC) <br />
                     (2011–2017) Hyundai Accent Komple Motor / Sandık Motor

@@ -11,23 +11,27 @@ export default function ImageSlider() {
           showThumbs={false}
           width={1300}
           autoPlay={true}
+          showArrows={false}
         >
           <div>
             <img
               alt=""
-              src="https://platincdn.com/2983/dosyalar/images/sdsdbanner1.jpg"
+              src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiIkWbZNgGzaoRqkrPs6GrkDbYg3eDvfK_wEKvyev700RvzhWLIt-fyMBtO2oDyFRCY_oFzA1etsAWTqdNIodC_6bymHFjoeOFh9-mUekgtVs6uwojW1jnfskvLc3fSeWaXg-xbTTu79lIM7goQ6i-1axk4oHOBlF4UE6U0wk5HJZ0YUXZMRFp5cIt1/s1280/audibanner.jpg"
+              height="530px"
             />
           </div>
           <div>
             <img
               alt=""
-              src="https://platincdn.com/2983/dosyalar/images/sdsdbanner2.jpg"
+              src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEguvuRBQyWodYeCOhNOwhWLLbvgY46F8lTSA72dUhBd1apgjKS7vEOV_59YsRrX86NnuZ9ABABBRAVNUXIfrpnnMJpctkJocNo9FRDdlNaC8bIy8FljW16ULOFIMZcxlCR3CBoT4c39NeOz1yUqb7t8QFhpLiT5koc0AQr02F_KVJ8jCRDyvpXn2WCm/s1280/hyundaibanner.jpg"
+              height="530px"
             />
           </div>
           <div>
             <img
               alt=""
-              src="https://platincdn.com/2983/dosyalar/images/sdsdbanner3.jpg"
+              src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgLMF5KjYqhBDWnIMXm8GYyf2mjWaM76U3hc4-HBzaOnZ1s08e5poO4UY7rtDoMejCZig2PQfttDkHxiy8Bm96yXRuId4qVllRdFnCbuNR3SeKXlvpqhzEyR5ciA5r3uAW-oeqQYbUyMGvmLPywM-0ztC7VRKDgMoN-EhbOm2UJ_jY34dxveqSwtdwm/s1280/bmwbanner.jpg"
+              height="530px"
             />
           </div>
         </Carousel>

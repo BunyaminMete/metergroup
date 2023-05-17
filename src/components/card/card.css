@@ -1,6 +1,9 @@
-#front-side {
-  width: 335px;
-  height: 500px;
+#m-front-side {
+  width: 100%;
+  min-width: 150px;
+  max-width: 200px;
+  width: 150px;
+  height: auto;
   background: #ffffff;
   -webkit-transition: all 100ms ease-out;
   -moz-transition: all 100ms ease-out;
@@ -8,10 +11,11 @@
   transition: all 100ms ease-out;
 }
 
-#product-card {
-  width: 300px;
-  height: 400px;
-  margin-left: 10px;
+#m-product-card {
+  width: 100%;
+  max-width: 140px;
+  min-height: 300px;
+  margin-left: 5px;
   margin-top: 15px;
   overflow: hidden;
   transform-style: preserve-3d;
@@ -21,43 +25,279 @@
   transition: 100ms ease-out;
 }
 
-.details-container {
+.m-details-container {
   background: #0a1925;
-  width: 300px;
-  height: 200px;
-  padding: 27px 0px;
-  -webkit-transition: all 200ms ease-out;
-  -moz-transition: all 200ms ease-out;
-  -o-transition: all 200ms ease-out;
-  transition: all 200ms ease-out;
-}
-#product-card.animate .details-container {
+  width: 100%;
+  max-width: 150px;
+  height: 140px;
+  padding: 20px 0px;
   -webkit-transition: all 200ms ease-out;
   -moz-transition: all 200ms ease-out;
   -o-transition: all 200ms ease-out;
   transition: all 200ms ease-out;
 }
 
-.details-container p {
+#m-product-card.animate .m-details-container {
+  -webkit-transition: all 200ms ease-out;
+  -moz-transition: all 200ms ease-out;
+  -o-transition: all 200ms ease-out;
+  transition: all 200ms ease-out;
+}
+
+.m-details-container p {
   font-size: 15px;
   font-weight: bold;
   color: rgb(255, 255, 255);
   padding: 2px 0 20px 0;
 }
 
-#title {
+#m-title {
   color: rgb(255, 255, 255);
   font-size: 13px;
-  letter-spacing: 0.1em;
+  letter-spacing: 0em;
   font-weight: lighter;
 }
 
-.motoImage {
-  width: 300px;
-  height: 280px;
-  margin-left: -20px;
+.m-motoImage {
+  width: 100%;
+  max-width: 170px;
+  height: auto;
+  scale: 1.2;
 }
 
-#container {
+#m-container {
+  display: flex;
   display: inline-block;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 340px) and (min-width: 325px) {
+  #m-front-side {
+    width: 100%;
+    min-width: 150px;
+    max-width: 200px;
+    width: 150px;
+  }
+  #m-product-card {
+    width: 100%;
+    max-width: 150px;
+    min-height: 300px;
+    margin-left: 10px;
+    margin-top: 15px;
+  }
+
+  .m-details-container {
+    background: #0a1925;
+    width: 100%;
+    max-width: 150px;
+    height: 140px;
+    padding: 27px 0px;
+  }
+}
+
+@media screen and (max-width: 360px) and (min-width: 340px) {
+  #m-front-side {
+    width: 100%;
+    min-width: 162px;
+    max-width: 200px;
+    width: 150px;
+  }
+  #m-product-card {
+    width: 100%;
+    max-width: 162px;
+    min-height: 300px;
+    margin-left: 10px;
+    margin-top: 15px;
+  }
+
+  .m-details-container {
+    background: #0a1925;
+    width: 100%;
+    max-width: 162px;
+    height: 140px;
+    padding: 27px 0px;
+  }
+}
+
+@media screen and (max-width: 370px) and (min-width: 360px) {
+  #m-front-side {
+    width: 100%;
+    min-width: 167px;
+    max-width: 200px;
+    width: 150px;
+  }
+  #m-product-card {
+    width: 100%;
+    max-width: 167px;
+    min-height: 300px;
+    margin-left: 10px;
+    margin-top: 15px;
+  }
+
+  .m-details-container {
+    background: #0a1925;
+    width: 100%;
+    max-width: 167px;
+    height: 140px;
+    padding: 27px 0px;
+  }
+}
+
+@media screen and (max-width: 380px) and (min-width: 370px) {
+  #m-front-side {
+    width: 100%;
+    min-width: 173px;
+    max-width: 200px;
+    width: 150px;
+  }
+  #m-product-card {
+    width: 100%;
+    max-width: 173px;
+    min-height: 300px;
+    margin-left: 10px;
+    margin-top: 15px;
+  }
+
+  .m-details-container {
+    background: #0a1925;
+    width: 100%;
+    max-width: 173px;
+    height: 140px;
+    padding: 27px 0px;
+  }
+}
+
+@media screen and (max-width: 390px) and (min-width: 380px) {
+  #m-front-side {
+    width: 100%;
+    min-width: 178px;
+    max-width: 200px;
+    width: 150px;
+  }
+  #m-product-card {
+    width: 100%;
+    max-width: 178px;
+    min-height: 300px;
+    margin-left: 10px;
+    margin-top: 15px;
+  }
+
+  .m-details-container {
+    background: #0a1925;
+    width: 100%;
+    max-width: 178px;
+    height: 140px;
+    padding: 27px 0px;
+  }
+}
+
+@media screen and (max-width: 400px) and (min-width: 390px) {
+  #m-front-side {
+    width: 100%;
+    min-width: 182px;
+    max-width: 200px;
+    width: 150px;
+  }
+  #m-product-card {
+    width: 100%;
+    max-width: 182px;
+    min-height: 300px;
+    margin-left: 10px;
+    margin-top: 15px;
+  }
+
+  .m-details-container {
+    background: #0a1925;
+    width: 100%;
+    max-width: 182px;
+    height: 140px;
+    padding: 27px 0px;
+  }
+}
+
+@media screen and (max-width: 410px) and (min-width: 400px) {
+  #m-front-side {
+    width: 100%;
+    min-width: 187px;
+    max-width: 200px;
+    width: 150px;
+  }
+  #m-product-card {
+    width: 100%;
+    max-width: 187px;
+    min-height: 300px;
+    margin-left: 10px;
+    margin-top: 15px;
+  }
+
+  .m-details-container {
+    background: #0a1925;
+    width: 100%;
+    max-width: 187px;
+    height: 140px;
+    padding: 27px 0px;
+  }
+}
+
+@media screen and (max-width: 420px) and (min-width: 410px) {
+  #m-front-side {
+    width: 100%;
+    min-width: 192px;
+    max-width: 200px;
+    width: 150px;
+    height: 250px;
+  }
+  #m-product-card {
+    width: 100%;
+    max-width: 192px;
+    min-height: 300px;
+    margin-left: 10px;
+    margin-top: 15px;
+  }
+
+  .m-details-container {
+    background: #0a1925;
+    width: 100%;
+    max-width: 192px;
+    height: 140px;
+    padding: 27px 0px;
+  }
+  .m-motoImage {
+    width: 100%;
+    max-width: 180px;
+    height: auto;
+    scale: 1.2;
+  }
+}
+
+@media screen and (max-width: 800px) and (min-width: 420px) {
+  #m-front-side {
+    width: 100%;
+    min-width: 197px;
+    max-width: 200px;
+    width: 150px;
+    height: 250px;
+  }
+  #m-product-card {
+    width: 100%;
+    max-width: 197px;
+    min-height: 300px;
+    margin-left: 10px;
+    margin-top: 15px;
+  }
+
+  .m-details-container {
+    background: #0a1925;
+    width: 100%;
+    max-width: 197px;
+    height: 140px;
+    padding: 27px 0px;
+  }
+  .m-motoImage {
+    width: 100%;
+    max-width: 185px;
+    height: auto;
+    scale: 1.2;
+  }
 }

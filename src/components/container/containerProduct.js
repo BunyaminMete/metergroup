@@ -20,7 +20,7 @@ export default function ProductContainer({ kategori }) {
             <ProductCard marka={"hyundai"} number={31} />
             <ProductCard marka={"bmw"} number={10} />
             <ProductCard marka={"hyundai"} number={0} />
-            <ProductCard marka={"audi"} number={17} />{" "}
+            <ProductCard marka={"audi"} number={17} />
           </Box>
         </Container>
       </div>

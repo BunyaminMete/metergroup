@@ -1,0 +1,14 @@
+.mk-titleDiv {
+  padding: 6px;
+  background-color: rgba(85, 85, 85, 0.432);
+  border-top: 2px solid rgb(156, 38, 38);
+}
+
+.mk-titleText {
+  padding: 3px;
+  color: rgb(255, 255, 255);
+  width: auto;
+  font-size: 14px;
+  letter-spacing: 0.1em;
+  font-weight: bold;
+}

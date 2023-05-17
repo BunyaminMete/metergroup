@@ -1,5 +1,8 @@
 body {
-  background-color: #2a2a2a;
+  background: url('../../images/audi.jpg');
+  background-size: cover;
+  transition: all 0.2s ease-in-out;
+  background-attachment: fixed;
   position: relative;
   margin: 0;
   padding: 0;
@@ -14,10 +17,6 @@ body {
     width: 100%;
     min-width: 1200px;
     min-height: 100vh;
-    background: url('../../images/audi.jpg');
-    background-size: cover;
-    transition: all 0.2s ease-in-out;
-    background-attachment: fixed;
 
     a {
       color: #fff;

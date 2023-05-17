@@ -5,9 +5,10 @@ import data from "../../data.json";
 
 export default function CategoryContainer({ kategori }) {
   const numbers = Array.from(
-    { length: data[kategori].length - 1 },
-    (_, index) => index + 1
+    { length: data[kategori].length },
+    (_, index) => index
   );
+
   const uppercaseKategori = kategori.toUpperCase();
 
   return (
@@ -22,8 +23,6 @@ export default function CategoryContainer({ kategori }) {
             <span className="titleText">{uppercaseKategori} MOTORLARI</span>
           </div>
           <Box>
-            <ProductCard marka={kategori} number={0} />
-
             {numbers.map((number) => (
               <>
                 <ProductCard marka={kategori} number={number} />

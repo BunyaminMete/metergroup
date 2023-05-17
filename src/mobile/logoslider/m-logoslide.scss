@@ -19,16 +19,15 @@ $animationSpeed: 30s;
 }
 
 // Styling
-.sliderlogo {
+.sliderlogo2 {
   background: rgba(0, 0, 0, 0.233);
   box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
   height: 100px;
   margin: auto;
   overflow: hidden;
   position: relative;
-  width: 1300px;
-  margin-top: 80px;
-  margin-left: -50px;
+  width: auto;
+  z-index: 0;
 
   &::before,
   &::after {

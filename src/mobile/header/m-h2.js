@@ -513,7 +513,7 @@ const HeaderMobile2 = () => {
                     </li>
                   </ul>
                 </li>
-                <li className="navbar__list-drop">
+                {/* <li className="navbar__list-drop">
                   <a href="#">
                     Company
                     <svg
@@ -547,7 +547,7 @@ const HeaderMobile2 = () => {
                 </li>
                 <li>
                   <a href="#">About</a>
-                </li>
+                </li> */}
               </ul>
               <div className="navbar__buttons"></div>
             </div>

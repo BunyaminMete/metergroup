@@ -71,7 +71,7 @@ header {
   height: 90px;
   top: 0;
   right: 0;
-  z-index: 100;
+  z-index: 999;
   background-color: black;
   ;
 }
@@ -100,7 +100,7 @@ header {
       top: 100%;
       right: 200%;
       width: 320px;
-      min-height: calc(100vh - 78px);
+      min-height: calc(100vh);
       background-color: var(--theme-light-color);
       flex-direction: column;
       align-items: flex-start;
@@ -436,11 +436,10 @@ const HeaderMobile2 = () => {
       <StyledComponent>
         <header>
           <nav className="navbar container">
-            <a href="#">
+            <a href="/">
               <img
-                src="https://blogger.googleusercontent.com/img/a/AVvXsEhSYkkKPB6JG0LeRtdb9jsYzZ77tJ0VA3zdvXQpRm02t-tUxgHRGNug7H_BCcSPiW3-d-Gd0tvJ3Ag1-KFb4xtRC_jT6URYYIFgNP0bU1Or4yNtqVzZ9QRbvzHzDMjPh0sWVwb5dah7UFmhe5JSx43C9mc3s8Du6_xBe93Z2YJJMuJqhBuGZ99CcoPK=w134-h80"
+                src="https://blogger.googleusercontent.com/img/a/AVvXsEi_B0HFiz2w0X-bmgEk9qbD8seb0gFRtJqJSzItW8DmKRp8QRVBdv930ih4sHmcRZa3GuWl0P2X_DUtPkf_hJas1nBFkIVanmkLIwPCjcfd-KV9YmlBFSB0O3PZul_E_kV1vJ81IfsS6_DNAnO_LxlvAPxzOV9sLcL6D3vT9RqFtbjAE-I3vJgb5uXi=w100-h57"
                 alt="logo"
-                className="logodeneme"
               />
             </a>
             <div className="navbar__menu">

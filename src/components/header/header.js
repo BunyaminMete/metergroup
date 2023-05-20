@@ -21,59 +21,21 @@ export default function Header() {
               <nav>
                 <ul class="siteNav">
                   <li>
-                    <a href="/bmw-motors">Ürünler</a>
+                    <a href="/bmw-motors">KATALOG</a>
                   </li>
                 </ul>
               </nav>
 
               <a href="/" class="logo">
                 <img
-                  src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgBL1KM707UTPvPH1zUPGKHjSuCkaB5mNkSWsomCE6DTigQaS8t0zngR3Duh4wtJ5LKtYEt78W43fRmJRNs0Si3gnGXNba473GaIo-ehgBtgQZauFMfTIJi2OyH7CPiXz8WUE4TfQnOWdC22qZR6aN0stB9Too34aLMXldEJ2ELvgvek4ZDlJIcdndC/w133-h132/Screenshot_2.png"
+                  src="https://blogger.googleusercontent.com/img/a/AVvXsEgaGBrmZujvGn9d4qex2WscGOjW4XWP3zFOEiJKuXEXjkpBM3bJ9qMOAQJBMkXcqnZKsUfkpHch6gPB1LOgKJd17XNy2pbhJY2Y0UKL1l83KAVDSUVsWf0JrHyHAHwXX5NM1kCtPbbZYEMogmyauhQhEw-gYcZfHe-qoM4KLlQ9_ExKaCKyQLYoa46L=w114-h110"
                   alt="logo"
                 ></img>
               </a>
 
               <div>
-                <a href="#0" class="buttonWrapper">
-                  <button class="button">
-                    <div class="text">Log In</div>
-                    <svg
-                      width="81px"
-                      height="37px"
-                      viewBox="0 0 81 37"
-                      class="border"
-                    >
-                      <polyline
-                        points="80,1 80,36 1,36 1,1 80,1"
-                        class="background"
-                      />
-                      <polyline
-                        points="80,1 80,36 1,36 1,1 80,1"
-                        class="hl-line"
-                      />
-                    </svg>
-                  </button>
-                </a>
-                <a href="#0" class="buttonWrapper">
-                  <button class="button">
-                    <div class="text">Sign Up</div>
-                    <svg
-                      width="81px"
-                      height="37px"
-                      viewBox="0 0 81 37"
-                      class="border"
-                    >
-                      <polyline
-                        points="80,1 80,36 1,36 1,1 80,1"
-                        class="background"
-                      />
-                      <polyline
-                        points="80,1 80,36 1,36 1,1 80,1"
-                        class="hl-line"
-                      />
-                    </svg>
-                  </button>
-                </a>
+                <a href="#0" class="buttonWrapper"></a>
+                <a href="#0" class="buttonWrapper"></a>
               </div>
             </header>
             <main>
@@ -98,6 +60,7 @@ export default function Header() {
           <CarouselMobile />
           <LogoSliderMobile />
           <MobileOneCikarilanlar />
+          <Footer />
         </>
       )}
     </>

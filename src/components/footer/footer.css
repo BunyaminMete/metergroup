@@ -6,8 +6,12 @@
   letter-spacing: 2px;
 }
 
+.denemelogo {
+  width: 200px;
+}
+
 .footer-link a {
-  color: #acacac;
+  color: #ffffff !important;
   line-height: 40px;
   font-size: 14px;
   transition: all 0.5s;
@@ -18,7 +22,7 @@
 }
 
 .contact-info {
-  color: #acacac;
+  color: #ffffff;
   font-size: 14px;
 }
 
@@ -80,11 +84,29 @@
   #markalar {
     margin-left: 0px;
     margin-top: 50px;
+    color: white;
+    font-weight: 400;
   }
   #iletisim {
     margin-top: 50px;
+    color: white;
   }
   .aciklamameter {
     width: 250px;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+  }
+
+  .contact-info {
+    color: white;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+}
+
+@media only screen and (max-width: 450px) and (min-width: 350px) {
+  .bg-footer {
+    margin-left: 20px;
   }
 }

@@ -2,10 +2,28 @@ import { Box, Container } from "@mui/material";
 import "./ilan.css";
 import data from "../../data.json";
 
+function splitAndWrap(sentence) {
+  const lastIndex = sentence.lastIndexOf(",");
+  const parts = sentence.substring(0, lastIndex).split(",");
+
+  return (
+    <div>
+      {parts.map((part, index) => (
+        <div key={index}>{part}</div>
+      ))}
+      <br />
+
+      {sentence.substring(lastIndex + 2)}
+    </div>
+  );
+}
+
 export default function IlanSingle({ marka, number }) {
   const formattedValue = new Intl.NumberFormat("tr-TR").format(
     data[marka][number].price * 20.24
   );
+
+  const sentence = data[marka][number].aciklama;
 
   return (
     <>
@@ -14,7 +32,7 @@ export default function IlanSingle({ marka, number }) {
           fixed={true}
           sx={{
             backgroundColor: "rgba(0, 0, 0, 0.6)",
-            minHeight: "1000px",
+            minHeight: "1200px",
             minWidth: "1200px",
           }}
           maxWidth="md"
@@ -44,23 +62,7 @@ export default function IlanSingle({ marka, number }) {
                 <div class="angry-grid">
                   <div id="item-0">{data[marka][number].model} </div>
                   <div id="item-1">
-                    Hyundai Accent Komple Motor / Sandık Motor (RB/RC) <br />
-                    (2011–2017) Hyundai Accent Komple Motor / Sandık Motor
-                    <br />
-                    (2017'den günümüze) Hyundai Elantra Komple Motor / Sandık
-                    <br />
-                    Motor (MD/UD) (2010–2015) Hyundai Elantra Komple Motor /
-                    <br />
-                    Sandık Motor (AD) (2015–2020) Hyundai Elantra Komple Motor /
-                    <br />
-                    Sandık Motor (CN7) (2020-günümüz) Hyundai i30 Komple Motor /
-                    <br />
-                    Sandık Motor (GD) (2011–2017) Hyundai i30 Komple Motor /
-                    <br />
-                    Sandık Motor (PD) (2016-günümüz)
-                    <br /> Aten Yedek Parça tarafından satılmakta olan tüm
-                    Motorlar Sıfır / Faturalı ve Ruhsata işlenebilir
-                    özelliktedir
+                    <> {splitAndWrap(sentence)}</>
                   </div>
                   <div id="item-2" className="info-price">
                     Motorun tahmini satış fiyatı {formattedValue} TL'dir. <br />

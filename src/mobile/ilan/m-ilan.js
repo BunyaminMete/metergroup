@@ -1,6 +1,22 @@
-import "./m-ilan.css";
+// import "./m-ilan.css";
 import data from "../../data.json";
-import styled, { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from "styled-components";
+
+function splitAndWrap(sentence) {
+  const lastIndex = sentence.lastIndexOf(",");
+  const parts = sentence.substring(0, lastIndex).split(",");
+
+  return (
+    <div>
+      {parts.map((part, index) => (
+        <div key={index}>{part}</div>
+      ))}
+      <br />
+
+      {sentence.substring(lastIndex + 2)}
+    </div>
+  );
+}
 
 export default function MobileIlanSingle({ marka, number }) {
   const formattedValue = new Intl.NumberFormat("tr-TR").format(
@@ -9,8 +25,9 @@ export default function MobileIlanSingle({ marka, number }) {
 
   const upperCaseMarka = marka.toUpperCase();
 
-  const ComponentStyles = createGlobalStyle`
-  :root {
+  const sentence = data[marka][number].aciklama;
+
+  const ComponentStyles = createGlobalStyle`:root {
     --green: #60ba00;
     --dark-text: hsl(0, 0%, 13%);
     --grey-text: hsl(0, 0%, 29%);
@@ -59,16 +76,65 @@ export default function MobileIlanSingle({ marka, number }) {
   }
   
   .product-card {
-    width: 270px;
+    width: 400px;
     min-width: 200px;
     height: 680px;
-    border-radius: 5px;
-    background-color: white;
-    margin: 20px;
+    background-color: rgb(255, 255, 255);
+    margin: 10px;
     overflow: auto;
-    padding: 20px 45px;
+    padding: 10px 20px;
     padding-top: 0px;
     position: relative;
+    margin-top: 100px;
+    display: block;
+  }
+  
+  @media screen and (min-width: 300px) and (max-width: 350px) {
+    .product-card {
+      width: 340px;
+      min-width: 200px;
+      height: 680px;
+      background-color: rgb(0, 0, 0);
+      overflow: auto;
+      padding: 10px 20px;
+      padding-top: 0px;
+      position: relative;
+      margin-top: 100px;
+      display: inline-block;
+      margin-left: -10px;
+    }
+  }
+  
+  @media screen and (min-width: 350px) and (max-width: 420px) {
+    .product-card {
+      width: 400px;
+      min-width: 200px;
+      height: 680px;
+      background-color: rgb(0, 0, 0);
+      margin: 10px;
+      overflow: auto;
+      padding: 10px 20px;
+      padding-top: 0px;
+      position: relative;
+      margin-top: 100px;
+      display: block;
+    }
+  }
+  
+  @media screen and (min-width: 420px) and (max-width: 1024px) {
+    .product-card {
+      width: 460px;
+      min-width: 200px;
+      height: 680px;
+      background-color: rgb(0, 0, 0);
+      margin: 10px;
+      overflow: auto;
+      padding: 10px 20px;
+      padding-top: 0px;
+      position: relative;
+      margin-top: 100px;
+      display: block;
+    }
   }
   
   .product-card p {
@@ -78,7 +144,7 @@ export default function MobileIlanSingle({ marka, number }) {
   }
   
   .product-card .top {
-    z-index: 100;
+    z-index: 1;
     position: sticky;
     top: 0;
     padding-top: 10px;
@@ -107,62 +173,45 @@ export default function MobileIlanSingle({ marka, number }) {
   
   .main img {
     width: 100%;
-    height: 330px;
+    height: 380px;
+    margin-top: -12px;
     object-fit: cover;
     /*   float: left; */
   }
   
   .main .price {
-    width: 70px;
     height: 70px;
-    background-color: var(--green);
+    background-color: black;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
+    color: rgb(255, 255, 255);
     margin-top: -40px;
-    margin-left: -10px;
+    margin-left: 00px;
     margin-bottom: 20px;
     z-index: 100;
     position: relative;
+    font-weight: bold;
+    font-size: 20px !important;
   }
   
   .main h2 {
-    color: var(--dark-text);
+    color: white;
   }
   
   .main h3 {
     font-size: 0.9rem;
     padding: 5px 0px;
     font-weight: 500;
-    color: var(--green);
+    color: white;
   }
   
   .main .price {
     font-size: 18px;
   }
   
-  .main img.small {
-    animation: image-shrink 0.4s forwards;
-  }
-  .main img.large {
-    animation: image-grow 0.4s forwards;
-  }
-  
-  .main .price.small {
-    display: none;
-  }
-  
-  .main h2.small {
-    /*   margin-bottom: 15px; */
-  }
-  
-  
   .details {
     margin: 30px 0px 60px 0px;
-  }
-  .details.small {
-    margin: 30px 0px;
   }
   
   .detail {
@@ -170,68 +219,14 @@ export default function MobileIlanSingle({ marka, number }) {
     align-items: center;
     margin: 15px 0px;
     font-weight: 500;
+    color: white;
+    border-bottom: 1px solid red;
   }
   
   .detail .type {
-    color: var(--light-grey-text);
+    color: white;
+    font-weight: bold;
   }
-  
-  .detail .description {
-    margin-left: auto;
-    color: var(--dark-text);
-  }
-  
-  .detail svg {
-    vertical-align: middle;
-    width: 25px;
-    height: 25px;
-    margin-right: 8px;
-  }
-  
-  .detail path {
-    fill: var(--very-light-text);
-  }
-  
-
-  
-  .detail-blocks {
-    display: flex;
-    justify-content: center;
-    margin: 30px 0px;
-    text-align: center;
-  }
-  
-  .detail-block {
-    width: 50%;
-    display: inline-block;
-    border: 2px solid #60ba001c;
-    padding: 25px 0px;
-  }
-  
-  .detail-block svg {
-    margin: 0px -3px;
-  }
-  
-  .detail-block path {
-    fill: var(--very-light-text);
-  }
-  .detail-block path.filled {
-    fill: var(--grey-text);
-  }
-  
-  .detail-block.left {
-    border-right: none;
-  }
-  
-  .detail-block .type {
-    color: var(--green);
-  }
-  
-  .detail-block .quantity {
-    font-size: 18px;
-    font-weight: 500;
-  }
-  
   
   button.buy {
     margin: auto;
@@ -247,39 +242,14 @@ export default function MobileIlanSingle({ marka, number }) {
     font-weight: 500;
   }
   
-  
-  
-  @keyframes image-shrink {
-    0% {
-      width: 100%;
-      height: 330px;
-      margin-right: 0px;
-    }
-    100% {
-      width: 70px;
-      height: 80px;
-      margin-right: 15px;
-    }
+  .more {
+    color: white;
+    font-weight: bold;
   }
-  
-  @keyframes image-grow {
-    0% {
-      width: 70px;
-      height: 80px;
-      margin-right: 15px;
-    }
-    100% {
-      width: 100%;
-      height: 330px;
-      margin-right: 0px;
-    }
-  }
-  
-`;
-
+  `;
   return (
     <>
-      {/* <ComponentStyles /> */}
+      <ComponentStyles />
       <div class="product-card" id="product-card3">
         <div class="top"></div>
         <div class="main">
@@ -298,26 +268,7 @@ export default function MobileIlanSingle({ marka, number }) {
           </div>
 
           <div class="more">
-            <p>
-              Hyundai Accent Komple Motor / Sandık Motor (RB/RC) <br />
-              (2011–2017) Hyundai Accent Komple Motor / Sandık Motor
-              <br />
-              (2017'den günümüze) Hyundai Elantra Komple Motor / Sandık
-              <br />
-              Motor (MD/UD) (2010–2015) Hyundai Elantra Komple Motor /
-              <br />
-              Sandık Motor (AD) (2015–2020) Hyundai Elantra Komple Motor /
-              <br />
-              Sandık Motor (CN7) (2020-günümüz) Hyundai i30 Komple Motor /
-              <br />
-              Sandık Motor (GD) (2011–2017) Hyundai i30 Komple Motor /
-              <br />
-              Sandık Motor (PD) (2016-günümüz)
-              <br /> Metergroup tarafından satılmakta olan tüm Motorlar Sıfır /
-              Faturalı ve Ruhsata işlenebilir özelliktedir
-            </p>
-
-            <button class="buy">{formattedValue} TL</button>
+            <> {splitAndWrap(sentence)}</>
           </div>
         </div>
       </div>

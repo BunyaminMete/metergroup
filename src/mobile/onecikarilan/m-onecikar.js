@@ -9,12 +9,12 @@ export default function MobileOneCikarilanlar({ kategori }) {
           <span className="m-titleText">ÖNERİLEN ÜRÜNLER</span>
         </div>
 
-        <MobileProductCard marka={"bmw"} number={1} />
         <MobileProductCard marka={"bmw"} number={7} />
-        <MobileProductCard marka={"hyundai"} number={31} />
         <MobileProductCard marka={"bmw"} number={10} />
-        <MobileProductCard marka={"hyundai"} number={0} />
         <MobileProductCard marka={"audi"} number={17} />
+        <MobileProductCard marka={"hyundai"} number={31} />
+        <MobileProductCard marka={"hyundai"} number={0} />
+        <MobileProductCard marka={"bmw"} number={1} />
       </div>
     </>
   );
